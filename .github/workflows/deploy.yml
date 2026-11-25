@@ -24,7 +24,7 @@ jobs:
         run: bash scripts/build.sh
 
       - name: Deploy to Cloudflare Workers
-        run: npx wrangler@3 deploy
+        run: npx wrangler@4 deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
