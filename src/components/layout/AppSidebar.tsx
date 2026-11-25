@@ -1,5 +1,5 @@
 import { Link, useLocation } from '@tanstack/react-router'
-import { ExternalLinkIcon, LayersIcon, SparklesIcon } from 'lucide-react'
+import { LayersIcon, SparklesIcon } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import {
   Sidebar,
@@ -82,19 +82,6 @@ export function AppSidebar() {
                   </span>
                 </div>
               </Link>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton size="sm" asChild tooltip="访问 GitHub 仓库">
-              <a
-                href="https://github.com/anhao/ai-pose-gallery-zh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-muted-foreground"
-              >
-                <ExternalLinkIcon className="size-3.5" />
-                <span>GitHub · @anhao_ai</span>
-              </a>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
